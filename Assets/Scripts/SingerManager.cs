@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 /*
     Sabe en que estado deberia estar la cantante
@@ -16,7 +17,7 @@ public class SingerManager : MonoBehaviour
     // El vizconde ha animado a la cantante true/false
     public bool cheered = false;
 
-    private void Start()
+    private void Awake()
     {
         this.gameObject.GetComponent<IdleState>().enabled = true;
         this.gameObject.GetComponent<CapturedState>().enabled = false;
@@ -29,26 +30,37 @@ public class SingerManager : MonoBehaviour
         cheered = cheer;
         return cheered;
     }
-
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter(Collision other)
     {
         // Si el Vizconde entra en colision y la anima, el idleState se activa
         if (other.gameObject.CompareTag("Vizconde") && cheered)
         {
             this.gameObject.GetComponent<IdleState>().enabled = true;
+            this.gameObject.GetComponent<NavMeshAgent>().enabled = true;
+            this.gameObject.GetComponent<IdleState>().inAction = true;
+            cheered = false;
         }
         // Si el fantasma entra en colision, deja de actuar por si sola y sigue al fantasma
-        else if (other.gameObject.CompareTag("Fanstasma"))
+        else if (other.gameObject.CompareTag("Fantasma"))
         {
             this.gameObject.GetComponent<IdleState>().enabled = false;
+            this.gameObject.GetComponent<NavMeshAgent>().enabled = false;
             this.gameObject.GetComponent<CapturedState>().enabled = true;
+            this.transform.parent = other.transform;
         }
+
+        if (Input.GetKeyDown(KeyCode.E))
+            setUnchild();
     }
 
-    private void OnTriggerExit(Collider other)
+    void setUnchild()
+    {
+        this.transform.parent = null;
+    }
+    private void OnCollisionExit(Collision other)
     {
         // Cuando el fantasma la suelta se queda quieta
-        if (other.gameObject.CompareTag("Fanstasma"))
+        if (other.gameObject.CompareTag("Fantasma"))
         {
             this.gameObject.GetComponent<CapturedState>().enabled = false;
         }

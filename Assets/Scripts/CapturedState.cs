@@ -12,7 +12,6 @@ public class CapturedState : MonoBehaviour
     private void Start()
     {
         // Cuando es capturada sigue al fantasma sin hacer nada mas
-        fantasma = GameObject.FindGameObjectWithTag("Fantasma");
-        this.transform.parent = fantasma.transform;
+
     }
 }

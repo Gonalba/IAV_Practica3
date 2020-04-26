@@ -15,7 +15,7 @@ public class IdleState : MonoBehaviour
 {
     public Transform[] posicionesAccion;
     NavMeshAgent nma;
-    bool inAction = false;
+    public bool inAction;
     public float maxTimeAction = 8.0f;
     public float minTimeAction = 3.0f;
     float timeInAction = 0;
@@ -27,6 +27,7 @@ public class IdleState : MonoBehaviour
         // Se asocian las posiciones del navmesh al array de posiciones
         nma = GetComponent<NavMeshAgent>();
         nma.destination = posicionesAccion[actionID].position;
+        inAction = false;
     }
 
     void Update()
@@ -38,6 +39,10 @@ public class IdleState : MonoBehaviour
             inAction = true;
             timeInAction = Random.Range(minTimeAction, maxTimeAction);
             lastTime = Time.time;
+        }
+        else if(transform.position != posicionesAccion[actionID].position && !inAction)
+        {
+            nma.destination = posicionesAccion[actionID].position;
         }
 
         // Si ya está realizando la acción
