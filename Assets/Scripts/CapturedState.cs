@@ -3,23 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /*
-    Se hace hijo del fantasma
-    Si ya no es hijo de, se queda en el sitio en el que estaba (crisis posttraumatica)
-    Espera hasta ser animada
-    Y luego marca como destino el escenario (y va claro)
+    Es un estado en el que unicamente sigue al fantasma, no hace nada por si misma
 */
 
 public class CapturedState : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public GameObject fantasma;
+    private void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        // Cuando es capturada sigue al fantasma sin hacer nada mas
+        fantasma = GameObject.FindGameObjectWithTag("Fantasma");
+        this.transform.parent = fantasma.transform;
     }
 }
