@@ -44,7 +44,7 @@ namespace UCM.IAV.Movimiento
 
         void OnTriggerStay(Collider other)
         {
-            if (other.tag == "Player" && Input.GetKeyDown("e"))
+            if (other.tag == "Vizconde" && Input.GetKeyDown("e"))
             {
                 leverState = !leverState;
                 lampara.toggleLampState();

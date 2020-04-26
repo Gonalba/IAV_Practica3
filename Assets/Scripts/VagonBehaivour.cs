@@ -6,21 +6,10 @@ public class VagonBehaivour : MonoBehaviour
 {
     public Transform posicionInicial1;
     public Transform posicionInicial2;
-    private 
-    // Start is called before the first frame update
-    void Start()
-    {
 
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Vizconde"))
         {
             transform.parent = other.transform;
             transform.localPosition = new Vector3(0, 0, 0);
