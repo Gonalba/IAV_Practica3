@@ -6,6 +6,7 @@ public class VagonBehaivour : MonoBehaviour
 {
     public Transform posicionInicial1;
     public Transform posicionInicial2;
+    private 
     // Start is called before the first frame update
     void Start()
     {
