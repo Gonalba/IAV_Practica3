@@ -27,20 +27,21 @@ public class IdleState : MonoBehaviour
         // Se asocian las posiciones del navmesh al array de posiciones
         nma = GetComponent<NavMeshAgent>();
         nma.destination = posicionesAccion[actionID].position;
-        inAction = false;
+        inAction = true;
     }
 
     void Update()
     {
+        bool samePos = isSamePositionXZ(transform.position, posicionesAccion[actionID].position);
         // Si la posicion es la posicion target y aun no está haciendo la accion
-        if (transform.position == posicionesAccion[actionID].position && !inAction)
+        if (samePos && !inAction)
         {
             // inicia la accion que dura un tiempo random dado un rango
             inAction = true;
             timeInAction = Random.Range(minTimeAction, maxTimeAction);
             lastTime = Time.time;
         }
-        else if(transform.position != posicionesAccion[actionID].position && !inAction)
+        else if (!samePos && !inAction)
         {
             nma.destination = posicionesAccion[actionID].position;
         }
@@ -58,5 +59,12 @@ public class IdleState : MonoBehaviour
                 nma.destination = posicionesAccion[actionID].position;
             }
         }
+    }
+
+    bool isSamePositionXZ(Vector3 pos1, Vector3 actPos)
+    {
+        int offset = 2;
+        return pos1.x < (actPos.x + offset) && pos1.x > (actPos.x - offset) &&
+               pos1.z < (actPos.z + offset) && pos1.z > (actPos.z - offset);
     }
 }

@@ -23,7 +23,6 @@ public class SingerManager : MonoBehaviour
         this.gameObject.GetComponent<CapturedState>().enabled = false;
     }
 
-
     // Metodo que se llamará desde el input asociado al vizconde
     public bool IsCheeredUp(bool cheer)
     {
@@ -37,7 +36,6 @@ public class SingerManager : MonoBehaviour
         {
             this.gameObject.GetComponent<IdleState>().enabled = true;
             this.gameObject.GetComponent<NavMeshAgent>().enabled = true;
-            this.gameObject.GetComponent<IdleState>().inAction = true;
             cheered = false;
         }
         // Si el fantasma entra en colision, deja de actuar por si sola y sigue al fantasma
@@ -48,14 +46,6 @@ public class SingerManager : MonoBehaviour
             this.gameObject.GetComponent<CapturedState>().enabled = true;
             this.transform.parent = other.transform;
         }
-
-        if (Input.GetKeyDown(KeyCode.E))
-            setUnchild();
-    }
-
-    void setUnchild()
-    {
-        this.transform.parent = null;
     }
     private void OnCollisionExit(Collision other)
     {
