@@ -21,7 +21,7 @@ public class IdleState : MonoBehaviour
     float timeInAction = 0;
     float lastTime = 0;
     int actionID = 0;
-
+    
     void Start()
     {
         // Se asocian las posiciones del navmesh al array de posiciones
