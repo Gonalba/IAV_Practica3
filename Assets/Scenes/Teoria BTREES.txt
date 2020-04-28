@@ -1,0 +1,50 @@
+ESTOS APUNTES ESTÁN DISEÑADOS PARA VER LOS BEHAVIOURS TREES QUE HAY EN LA ESCENA DE UNITY, ORDENADOS TAMBIÉN POR NÚMERO DE VIDEO.
+
+_VIDEO 1_ BEHAVIOUR TREES WITH BEHAVIOUR DESIGNER
+Lo que hace el ejemplo es perseguir a un personaje, pero cuando se encuentra con enemigo mayor para.
+
+Explica el REPEATER y cómo una acción corta a otra.
+
+_VIDEO 2_ WHAT IS A BEHAVIOUR TREE?
+Explica los 4 tipos de TASKS que hay
+	Compositors: padres de otras acciones
+	Decorators: cambian el return
+	Actions: las acciones principales
+	Conditionals: true/false
+Explica que cada nodo tiene 3 estados:
+	Success (tick verde)
+	Failure (cruz roja)
+	Running (la task está en color verde)
+Comenta lo facil que es debuggear ya que se puede cambiar el orden de las ramas seleccionandolas enteras y llevandolas hacia la izquierda (zona de mayor prioridad).
+Explica el SELECTOR por encima.
+Abre por primera vez un script de un TASK para ver el estilo del mismo. El return importante es el del TaskStatus.
+
+_VIDEO 3_ WHAT IS A SEQUENCE TASK?
+Explica el funcionamiento de SEQUENCE.
+Primero explica como devolver success en un arbol sencillo.
+Añadiendo una tarea que fuerce un Failure, vemos como falla toda la secuencia y consigo el arbol.
+Para finalizar fuerza con una tarea Success que todo el arbol devuelva Succes a partir de la secuencia superior.
+
+_VIDEO 4_ WHAT IS A SELECTOR TASK?
+Explica el funcionamiento de SELECTOR.
+El Selector devolverá éxito cuando alguno de sus hijos devuelva Success. En cuanto eso pase, se acaba el selector.	
+En el ultimo ejemplo une por primera vez SEQUENCE con SELECTOR.
+Este video es buen ejemplo de las combinaciones entre sequence y selector con tareas sencillas que se ven a simple vista si devuelves success o failure.
+
+_VIDEO 6_ WHAT IS A REPEATER TASK?
+En este video explica que es mas eficaz usar un repeater que copiar y pegar secuencias de eventos iguales. 
+Además comenta que es especialmente útil el REPEAT FOREVER para enemigos que constantemente tienen alguna tarea que hacer.
+Para esto último, el propio árbol el el script tiene una opcion de "Restart when complete". Es decir, son dos maneras de hacer lo mismo.
+Es importante el ejemplo que pone de End on Failure, en el que el repeater ignora una secuencia que devuelve failure si este check no está activado en el propio Inspector.
+
+_VIDEO 7_ WHAT IS A PARALLEL TASK?
+Explica como Parallel funciona con más de un task hijo.
+Gracias a esta tarea podemos hacer que un solo personaje realice varias acciones a la vez.
+En un arbol mas complicado de un enemigo que dispare y tenga que elegir arma al mismo tiempo puede ser muy útil.
+En cuanto a que alguno de sus hijos devuelva Failure, funciona de forma similar a Sequence, ya que entonces devolverá Failure la propia tarea padre.
+Parallel Selector: sigue funcionando aunque alguno de sus hijos devuelva Failure.
+Parallel Complete: devuelve al instante lo que devuelven cada una de sus ramas hijas.
+
+___AQUI TERMINANN LOS BEHAVIOUR TREE BASICS___
+
+_VIDEO 8_ BEHAVIOUR TREE OVERVIEW
