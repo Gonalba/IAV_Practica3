@@ -15,7 +15,7 @@ namespace UCM.IAV.Movimiento
         /// <summary>
         /// True if PULLED (UP), false if DROPPED (Down)
         /// </summary>
-        private bool lampState;
+        public bool lampState;
 
         private Emisor emisor;
 

@@ -123,7 +123,7 @@ namespace UCM.IAV.Movimiento {
         /// </summary>
         public virtual void Update()
         {
-            if (cuerpoRigido != null)
+            if (cuerpoRigido == null)
                 return;
             // ... código previo
             Vector3 desplazamiento = velocidad * Time.deltaTime;
