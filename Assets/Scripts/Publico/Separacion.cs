@@ -37,8 +37,8 @@ namespace UCM.IAV.Movimiento
             Direccion result = new Direccion();
             UnityEngine.Vector3 direction;
 
-            if (f.getOnTarget())
-                return result;
+            //if (f.getOnTarget())
+                //return result;
 
             foreach (Flocking target in FindObjectsOfType<Flocking>())
             {
