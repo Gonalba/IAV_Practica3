@@ -181,7 +181,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 132335694}
@@ -2296,7 +2296,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 1425693886}
@@ -6107,7 +6107,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 1444600817}
@@ -8464,7 +8464,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 196631366}
@@ -10577,7 +10577,7 @@ PrefabInstance:
     - target: {fileID: 1402810260373297529, guid: e8b31a3a73b4b844a9d47ca71019bd1a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 19.07
+      value: 9.22
       objectReference: {fileID: 0}
     - target: {fileID: 1402810260373297529, guid: e8b31a3a73b4b844a9d47ca71019bd1a,
         type: 3}
@@ -10587,7 +10587,7 @@ PrefabInstance:
     - target: {fileID: 1402810260373297529, guid: e8b31a3a73b4b844a9d47ca71019bd1a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -19.88
+      value: 37.47
       objectReference: {fileID: 0}
     - target: {fileID: 1402810260373297529, guid: e8b31a3a73b4b844a9d47ca71019bd1a,
         type: 3}
@@ -12138,7 +12138,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 668996421}
   m_LocalRotation: {x: -0, y: 0.8575508, z: -0, w: -0.5143994}
-  m_LocalPosition: {x: 19.07, y: 6.8, z: -19.88}
+  m_LocalPosition: {x: 9.22, y: 6.8, z: 37.47}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 959853745}
@@ -12433,7 +12433,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 165287104}
@@ -15180,7 +15180,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 1555223272}
@@ -18763,7 +18763,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 1023755770}
@@ -20759,7 +20759,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 1742365655}
@@ -23607,7 +23607,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 359145343}
@@ -27196,6 +27196,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1081584436}
+  - {fileID: 1160114298}
   m_Father: {fileID: 1369564959}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -27209,7 +27210,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 1993662570}
@@ -28323,7 +28324,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 1654222749}
@@ -28948,6 +28949,77 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1158936683}
   m_CullTransparentMesh: 0
+--- !u!1 &1160114297
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1160114298}
+  - component: {fileID: 1160114301}
+  - component: {fileID: 1160114300}
+  - component: {fileID: 1160114299}
+  m_Layer: 0
+  m_Name: Instrumentos
+  m_TagString: Musica
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1160114298
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1160114297}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.5, y: 0, z: 4.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1107626916}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1160114299
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1160114297}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 100, y: 100, z: 100}
+  m_Center: {x: -10, y: 0, z: -30}
+--- !u!135 &1160114300
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1160114297}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1160114301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1160114297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8856609a38a12914cbd3cf6cf77cd853, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1161071278
 GameObject:
   m_ObjectHideFlags: 0
@@ -29275,7 +29347,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 1455862767}
@@ -32748,7 +32820,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 1315395752}
@@ -35084,7 +35156,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 359775107}
@@ -36884,7 +36956,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 2118238604}
@@ -40378,27 +40450,35 @@ MonoBehaviour:
     behaviorName: Behavior
     behaviorDescription: 
     mTaskData:
-      types:
-      - BehaviorDesigner.Runtime.Tasks.EntryTask
-      - BehaviorDesigner.Runtime.Tasks.Selector
-      - BehaviorDesigner.Runtime.Tasks.Sequence
-      - BehaviorDesigner.Runtime.Tasks.Tutorials.CanSeeObject
-      - BehaviorDesigner.Runtime.Tasks.Tutorials.Seek
-      - BehaviorDesigner.Runtime.Tasks.Idle
-      parentIndex: ffffffff0000000001000000020000000200000001000000
-      startIndex: 000000000a00000016000000220000003b00000059000000
+      types: []
+      parentIndex: 
+      startIndex: 
       variableStartIndex: 
-      JSONSerialization: 
+      JSONSerialization: '{"EntryTask":{"Type":"BehaviorDesigner.Runtime.Tasks.EntryTask","NodeData":{"Offset":"(499.5,30)"},"ID":0,"Name":"Entry","Instant":true},"RootTask":{"Type":"BehaviorDesigner.Runtime.Tasks.Selector","NodeData":{"Offset":"(-0.5,110)"},"ID":1,"Name":"Selector","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Selector","NodeData":{"Offset":"(-874.4532,120.063423)"},"ID":2,"Name":"Selector","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(-265.839722,121.275543)"},"ID":3,"Name":"Sequence","Instant":true,"AbortTypeabortType":"LowerPriority","Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Unity.SharedVariables.CompareSharedBool","NodeData":{"Offset":"(-260.689758,130.689514)"},"ID":4,"Name":"Compare
+        Shared Bool","Instant":true,"SharedBoolvariable":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":"State_SalaMusica","IsShared":true,"BooleanmValue":false},"SharedBoolcompareTo":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false}},{"Type":"BehaviorDesigner.Runtime.Tasks.Tutorials.CanHearObject","NodeData":{"Offset":"(-86.5745239,118.668488)"},"ID":5,"Name":"Can
+        Hear Object","Instant":true,"GameObjecttargetObject":0,"Stringtag":"Musica","SharedGameObjectotherGameObject":{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":null}},{"Type":"BehaviorDesigner.Runtime.Tasks.Unity.SharedVariables.SetSharedBool","NodeData":{"Offset":"(85.83933,118.668549)"},"ID":6,"Name":"Set
+        Shared Bool","Instant":true,"SharedBooltargetValue":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":true},"SharedBooltargetVariable":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":"State_SalaMusica","IsShared":true,"BooleanmValue":false}},{"Type":"BehaviorDesigner.Runtime.Tasks.Unity.UnityNavMeshAgent.SetDestination","NodeData":{"Offset":"(241.011841,118.668488)"},"ID":7,"Name":"Set
+        Destination","Instant":true,"SharedGameObjecttargetGameObject":{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":null,"GameObjectmValue":1},"SharedVector3destination":{"Type":"BehaviorDesigner.Runtime.SharedVector3","Name":"Position_SalaMusica","IsShared":true,"PropertyMapping":"UnityEngine.Transform/position","PropertyMappingOwner":2,"Vector3mValue":"(0,0,0)"}}]},{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(354.115082,152.461685)"},"ID":8,"Name":"Sequence","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Unity.SharedVariables.CompareSharedBool","NodeData":{"Offset":"(-132.758621,107.930954)"},"ID":9,"Name":"Compare
+        Shared Bool","Instant":true,"SharedBoolvariable":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":"State_SalaMusica","IsShared":true,"BooleanmValue":false},"SharedBoolcompareTo":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":true}},{"Type":"BehaviorDesigner.Runtime.Tasks.Selector","NodeData":{"Offset":"(124.80481,105.909805)"},"ID":10,"Name":"Selector","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(-246.363617,150.000122)"},"ID":11,"Name":"Sequence","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Unity.UnityNavMeshAgent.GetRemainingDistance","NodeData":{"Offset":"(-199.8081,111.57196)"},"ID":12,"Name":"Get
+        Remaining Distance","Instant":true,"SharedGameObjecttargetGameObject":{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":null,"GameObjectmValue":3},"SharedFloatstoreValue":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"NavMesh_Distance","IsShared":true,"SinglemValue":0}},{"Type":"BehaviorDesigner.Runtime.Tasks.Unity.SharedVariables.CompareDistance","NodeData":{"Offset":"(-0.329521179,105.4471)"},"ID":13,"Name":"Compare
+        Distance","Instant":true,"SharedFloatvariable":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"NavMesh_Distance","IsShared":true,"SinglemValue":0},"SinglecompareTo":2},{"Type":"BehaviorDesigner.Runtime.Tasks.Unity.UnityNavMeshAgent.Resume","NodeData":{"Offset":"(196.640167,105.447144)"},"ID":14,"Name":"Resume","Instant":true,"SharedGameObjecttargetGameObject":{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":null,"GameObjectmValue":4}}]},{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(253.636261,150.000183)"},"ID":15,"Name":"Sequence","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.FixMusicRoom","NodeData":{"Offset":"(-147.299255,105.44696)"},"ID":16,"Name":"Fix
+        Music Room","Instant":true},{"Type":"BehaviorDesigner.Runtime.Tasks.Unity.SharedVariables.SetSharedBool","NodeData":{"Offset":"(4.215951,105.447266)"},"ID":17,"Name":"Set
+        Shared Bool","Instant":true,"SharedBooltargetValue":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false},"SharedBooltargetVariable":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":"State_SalaMusica","IsShared":true,"BooleanmValue":false}},{"Type":"BehaviorDesigner.Runtime.Tasks.Unity.UnityNavMeshAgent.Stop","NodeData":{"Offset":"(157.799591,105.446945)"},"ID":18,"Name":"Stop","Instant":true,"SharedGameObjecttargetGameObject":{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":null,"GameObjectmValue":5}}]}]}]},{"Type":"BehaviorDesigner.Runtime.Tasks.Idle","NodeData":{"Offset":"(571.7925,152.874908)"},"ID":19,"Name":"Idle","Instant":true}]}]},"Variables":[{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":"State_SalaMusica","IsShared":true,"BooleanmValue":false},{"Type":"BehaviorDesigner.Runtime.SharedVector3","Name":"Position_SalaMusica","IsShared":true,"PropertyMapping":"UnityEngine.Transform/position","PropertyMappingOwner":6,"Vector3mValue":"(0,0,0)"},{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"NavMesh_Distance","IsShared":true,"SinglemValue":0}]}'
       fieldSerializationData:
         typeName: []
-        fieldNameHash: 2944782b951203e811c37978c4a37522ae07a096e44d14616fd219c3a5f3b63149269a1caac4f9012944782b951203e811c37978c4a37522ae07a096e44d14616fd219c3a5f3b63149269a1caac4f9018690b4b290adcd7b2944782b951203e811c37978c4a37522ae07a096e44d14616fd219c3a5f3b63149269a1caac4f9018690b4b290adcd7b2944782b951203e811c37978c4a37522ae07a096e44d14616fd219c3a5f3b63149269a1caac4f90114489fba0d07f5105ef2f11037012c2f345a154a2d196ba07e0468a04e4dfb1db14bf79faa0a4df6fbf549f6cb3edd7312e45e6f0ba3b4c55c8eb1c52944782b951203e811c37978c4a37522ae07a096e44d14616fd219c3a5f3b63149269a1caac4f901f0767560e935cbb63a21c8b60a6a5b347c35643775f4b98dc6dfb68d96284a0b23ac94bd1c6bea136d56e7133d9f7a91b5a61401ae656a57ff506757d85fa175058ea35dfe4cf9b34f38f6b319a5d2a92944782b951203e811c37978c4a37522ae07a096e44d14616fd219c3a5f3b63149269a1caac4f901
-        startIndex: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f00000010000000110000001200000013000000140000001400000015000000160000001700000018000000190000001a0000001b0000001c0000001d0000001e0000001f0000001f000000200000002100000022000000230000002400000025000000260000002700000028000000290000002a0000002a0000002b0000002c0000002d0000002d0000002e0000002f0000003000000030000000310000003200000033000000330000003400000035000000360000003700000038000000390000003a0000003b0000003c0000003d0000003e0000003f0000003f000000400000004100000042000000420000004300000044000000450000004500000046000000470000004800000048000000490000004a0000004b0000004b0000004c0000004d0000004e0000004f0000005000000051000000520000005300000054000000550000005600000057000000
-        dataPosition: 0000000004000000090000000a0000000b00000013000000130000001400000015000000190000001d00000021000000290000002a0000002b00000033000000330000003400000035000000390000003d00000041000000450000004d0000004e0000004f000000570000005700000058000000590000005d00000061000000650000006900000077000000780000007900000081000000810000008200000083000000870000008b000000b4000000b4000000b8000000dc000000dc000000e0000000040100000401000008010000310100003101000035010000390100003a0100003b01000043010000430100004401000045010000490100004d01000071010000710100007501000099010000990100009d010000c1010000c1010000c5010000ee010000ee010000f2010000180200001802000024020000280200002c0200002d0200002e020000360200003602000037020000380200003c020000
+        fieldNameHash: 
+        startIndex: 
+        dataPosition: 
         unityObjects:
-        - {fileID: 668996421}
-        - {fileID: 668996421}
-        byteData: 00000000456e747279010000c0f9430000f041000000000000000000000100000053656c6563746f720100000000bf0000dc4200000000000000000000000000000200000053657175656e636501000000c8c20000dc4200000000000000000000030000000300000043616e20536565204f626a65637401000000a1c20000dc42000000000000000000004265686176696f7244657369676e65722e52756e74696d652e53686172656447616d654f626a656374000000004265686176696f7244657369676e65722e52756e74696d652e536861726564466c6f6174000034424265686176696f7244657369676e65722e52756e74696d652e536861726564466c6f61740000f0414265686176696f7244657369676e65722e52756e74696d652e53686172656447616d654f626a656374040000005365656b010000008c420000dc42000000000000000000004265686176696f7244657369676e65722e52756e74696d652e536861726564466c6f6174000020414265686176696f7244657369676e65722e52756e74696d652e536861726564466c6f61740000f0424265686176696f7244657369676e65722e52756e74696d652e536861726564466c6f61740000c03f4265686176696f7244657369676e65722e52756e74696d652e53686172656447616d654f626a656374010000004265686176696f7244657369676e65722e52756e74696d652e536861726564566563746f72330000000000000000000000000500000049646c6501000000b3420000dc4200000000000000000000
-        byteDataArray: 00000000456e747279010000c0f9430000f041000000000000000000000100000053656c6563746f720100000000bf0000dc4200000000000000000000000000000200000053657175656e636501000000c8c20000dc4200000000000000000000030000000300000043616e20536565204f626a65637401000000a1c20000dc42000000000000000000004265686176696f7244657369676e65722e52756e74696d652e53686172656447616d654f626a656374000000004265686176696f7244657369676e65722e52756e74696d652e536861726564466c6f6174000034424265686176696f7244657369676e65722e52756e74696d652e536861726564466c6f61740000f0414265686176696f7244657369676e65722e52756e74696d652e53686172656447616d654f626a656374040000005365656b010000008c420000dc42000000000000000000004265686176696f7244657369676e65722e52756e74696d652e536861726564466c6f6174000020414265686176696f7244657369676e65722e52756e74696d652e536861726564466c6f61740000f0424265686176696f7244657369676e65722e52756e74696d652e536861726564466c6f61740000c03f4265686176696f7244657369676e65722e52756e74696d652e53686172656447616d654f626a656374010000004265686176696f7244657369676e65722e52756e74696d652e536861726564566563746f72330000000000000000000000000500000049646c6501000000b3420000dc4200000000000000000000
+        - {fileID: 1160114297}
+        - {fileID: 1338089280}
+        - {fileID: 1081584435}
+        - {fileID: 1338089280}
+        - {fileID: 1338089280}
+        - {fileID: 1338089280}
+        - {fileID: 1081584435}
+        byteData: 
+        byteDataArray: 
       Version: 1.6.4
   gizmoViewMode: 2
   showBehaviorDesignerGizmo: 1
@@ -40460,7 +40540,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1338089280}
   m_LocalRotation: {x: -0, y: 0.6935248, z: -0, w: 0.72043276}
-  m_LocalPosition: {x: 8.51, y: 1.74, z: 16.31}
+  m_LocalPosition: {x: 5.32, y: 1.74, z: 14.53}
   m_LocalScale: {x: 0.8, y: 1.5, z: 0.8}
   m_Children:
   - {fileID: 1618769841}
@@ -41344,7 +41424,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 1275917804}
@@ -43806,7 +43886,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 1070820577}
@@ -45028,7 +45108,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 1212701161}
@@ -49643,7 +49723,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 65706420}
@@ -51744,7 +51824,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 1449400727}
@@ -54293,7 +54373,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh15990
+  m_Name: pb_Mesh15988
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -54696,7 +54776,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 2057846540}
@@ -59279,6 +59359,51 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4392630683564361498, guid: 9de79fb6b962d5b4cb7eb4c50200d8d5,
         type: 3}
+      propertyPath: mBehaviorSource.mTaskData.types.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4392630683564361498, guid: 9de79fb6b962d5b4cb7eb4c50200d8d5,
+        type: 3}
+      propertyPath: mBehaviorSource.mTaskData.parentIndex.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4392630683564361498, guid: 9de79fb6b962d5b4cb7eb4c50200d8d5,
+        type: 3}
+      propertyPath: mBehaviorSource.mTaskData.startIndex.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4392630683564361498, guid: 9de79fb6b962d5b4cb7eb4c50200d8d5,
+        type: 3}
+      propertyPath: mBehaviorSource.mTaskData.fieldSerializationData.fieldNameHash.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4392630683564361498, guid: 9de79fb6b962d5b4cb7eb4c50200d8d5,
+        type: 3}
+      propertyPath: mBehaviorSource.mTaskData.fieldSerializationData.startIndex.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4392630683564361498, guid: 9de79fb6b962d5b4cb7eb4c50200d8d5,
+        type: 3}
+      propertyPath: mBehaviorSource.mTaskData.fieldSerializationData.dataPosition.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4392630683564361498, guid: 9de79fb6b962d5b4cb7eb4c50200d8d5,
+        type: 3}
+      propertyPath: mBehaviorSource.mTaskData.fieldSerializationData.byteData.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4392630683564361498, guid: 9de79fb6b962d5b4cb7eb4c50200d8d5,
+        type: 3}
+      propertyPath: mBehaviorSource.mTaskData.fieldSerializationData.byteDataArray.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4392630683564361498, guid: 9de79fb6b962d5b4cb7eb4c50200d8d5,
+        type: 3}
+      propertyPath: mBehaviorSource.mTaskData.fieldSerializationData.unityObjects.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4392630683564361498, guid: 9de79fb6b962d5b4cb7eb4c50200d8d5,
+        type: 3}
       propertyPath: mBehaviorSource.mTaskData.fieldSerializationData.unityObjects.Array.data[0]
       value: 
       objectReference: {fileID: 668996421}
@@ -59287,10 +59412,24 @@ PrefabInstance:
       propertyPath: mBehaviorSource.mTaskData.fieldSerializationData.unityObjects.Array.data[1]
       value: 
       objectReference: {fileID: 668996421}
+    - target: {fileID: 4392630683564361498, guid: 9de79fb6b962d5b4cb7eb4c50200d8d5,
+        type: 3}
+      propertyPath: mBehaviorSource.mTaskData.JSONSerialization
+      value: '{"EntryTask":{"Type":"BehaviorDesigner.Runtime.Tasks.EntryTask","NodeData":{"Offset":"(499.5,30)"},"ID":0,"Name":"Entry","Instant":true},"RootTask":{"Type":"BehaviorDesigner.Runtime.Tasks.Selector","NodeData":{"Offset":"(-0.5,110)"},"ID":1,"Name":"Selector","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Selector","NodeData":{"Offset":"(-874.4532,120.063423)"},"ID":2,"Name":"Selector","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(-265.839722,121.275543)"},"ID":3,"Name":"Sequence","Instant":true,"AbortTypeabortType":"LowerPriority","Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Unity.SharedVariables.CompareSharedBool","NodeData":{"Offset":"(-260.689758,130.689514)"},"ID":4,"Name":"Compare
+        Shared Bool","Instant":true,"SharedBoolvariable":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":"State_SalaMusica","IsShared":true,"BooleanmValue":false},"SharedBoolcompareTo":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false}},{"Type":"BehaviorDesigner.Runtime.Tasks.Tutorials.CanHearObject","NodeData":{"Offset":"(-86.5745239,118.668488)"},"ID":5,"Name":"Can
+        Hear Object","Instant":true,"GameObjecttargetObject":0,"Stringtag":"Musica","SharedGameObjectotherGameObject":{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":null}},{"Type":"BehaviorDesigner.Runtime.Tasks.Unity.SharedVariables.SetSharedBool","NodeData":{"Offset":"(85.83933,118.668549)"},"ID":6,"Name":"Set
+        Shared Bool","Instant":true,"SharedBooltargetValue":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":true},"SharedBooltargetVariable":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":"State_SalaMusica","IsShared":true,"BooleanmValue":false}},{"Type":"BehaviorDesigner.Runtime.Tasks.Unity.UnityNavMeshAgent.SetDestination","NodeData":{"Offset":"(241.011841,118.668488)"},"ID":7,"Name":"Set
+        Destination","Instant":true,"SharedGameObjecttargetGameObject":{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":null,"GameObjectmValue":1},"SharedVector3destination":{"Type":"BehaviorDesigner.Runtime.SharedVector3","Name":"Position_SalaMusica","IsShared":true,"PropertyMapping":"UnityEngine.Transform/position","PropertyMappingOwner":2,"Vector3mValue":"(0,0,0)"}}]},{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(354.115082,152.461685)"},"ID":8,"Name":"Sequence","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Unity.SharedVariables.CompareSharedBool","NodeData":{"Offset":"(-132.758621,107.930954)"},"ID":9,"Name":"Compare
+        Shared Bool","Instant":true,"SharedBoolvariable":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":"State_SalaMusica","IsShared":true,"BooleanmValue":false},"SharedBoolcompareTo":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":true}},{"Type":"BehaviorDesigner.Runtime.Tasks.Selector","NodeData":{"Offset":"(124.80481,105.909805)"},"ID":10,"Name":"Selector","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(-246.363617,150.000122)"},"ID":11,"Name":"Sequence","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Unity.UnityNavMeshAgent.GetRemainingDistance","NodeData":{"Offset":"(-199.8081,111.57196)"},"ID":12,"Name":"Get
+        Remaining Distance","Instant":true,"SharedGameObjecttargetGameObject":{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":null,"GameObjectmValue":3},"SharedFloatstoreValue":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"NavMesh_Distance","IsShared":true,"SinglemValue":0}},{"Type":"BehaviorDesigner.Runtime.Tasks.Unity.SharedVariables.CompareDistance","NodeData":{"Offset":"(-0.329521179,105.4471)"},"ID":13,"Name":"Compare
+        Distance","Instant":true,"SharedFloatvariable":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"NavMesh_Distance","IsShared":true,"SinglemValue":0},"SinglecompareTo":2},{"Type":"BehaviorDesigner.Runtime.Tasks.Unity.UnityNavMeshAgent.Resume","NodeData":{"Offset":"(196.640167,105.447144)"},"ID":14,"Name":"Resume","Instant":true,"SharedGameObjecttargetGameObject":{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":null,"GameObjectmValue":4}}]},{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(253.636261,150.000183)"},"ID":15,"Name":"Sequence","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.FixMusicRoom","NodeData":{"Offset":"(-147.299255,105.44696)"},"ID":16,"Name":"Fix
+        Music Room","Instant":true},{"Type":"BehaviorDesigner.Runtime.Tasks.Unity.SharedVariables.SetSharedBool","NodeData":{"Offset":"(4.215951,105.447266)"},"ID":17,"Name":"Set
+        Shared Bool","Instant":true,"SharedBooltargetValue":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false},"SharedBooltargetVariable":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":"State_SalaMusica","IsShared":true,"BooleanmValue":false}},{"Type":"BehaviorDesigner.Runtime.Tasks.Unity.UnityNavMeshAgent.Stop","NodeData":{"Offset":"(157.799591,105.446945)"},"ID":18,"Name":"Stop","Instant":true,"SharedGameObjecttargetGameObject":{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":null,"GameObjectmValue":5}}]}]}]},{"Type":"BehaviorDesigner.Runtime.Tasks.Idle","NodeData":{"Offset":"(571.7925,152.874908)"},"ID":19,"Name":"Idle","Instant":true}]}]},"Variables":[{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":"State_SalaMusica","IsShared":true,"BooleanmValue":false},{"Type":"BehaviorDesigner.Runtime.SharedVector3","Name":"Position_SalaMusica","IsShared":true,"PropertyMapping":"UnityEngine.Transform/position","PropertyMappingOwner":6,"Vector3mValue":"(0,0,0)"},{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"NavMesh_Distance","IsShared":true,"SinglemValue":0}]}'
+      objectReference: {fileID: 0}
     - target: {fileID: 4392630683564361501, guid: 9de79fb6b962d5b4cb7eb4c50200d8d5,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.51
+      value: 5.32
       objectReference: {fileID: 0}
     - target: {fileID: 4392630683564361501, guid: 9de79fb6b962d5b4cb7eb4c50200d8d5,
         type: 3}
@@ -59300,7 +59439,7 @@ PrefabInstance:
     - target: {fileID: 4392630683564361501, guid: 9de79fb6b962d5b4cb7eb4c50200d8d5,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 16.31
+      value: 14.53
       objectReference: {fileID: 0}
     - target: {fileID: 4392630683564361501, guid: 9de79fb6b962d5b4cb7eb4c50200d8d5,
         type: 3}

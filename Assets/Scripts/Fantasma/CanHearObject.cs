@@ -24,7 +24,6 @@ namespace BehaviorDesigner.Runtime.Tasks.Tutorials
         /// <returns></returns>
         public override TaskStatus OnUpdate()
         {
-
             if (target)
             {
                 // Return success if target was found
@@ -68,7 +67,7 @@ namespace BehaviorDesigner.Runtime.Tasks.Tutorials
 
         public override void OnTriggerEnter(Collider other)
         {
-            
+            Debug.Log("HAY TRIGGER");
             if (other.gameObject.tag == tag && other is BoxCollider)
             {
                 otherGameObject.Value = other.gameObject;
