@@ -11,6 +11,9 @@ TagManager:
   - Espectador
   - Vizconde
   - Cantante
+  - BarcaSEM
+  - BarcaSESN
+  - BarcaSOC
   layers:
   - Default
   - TransparentFX

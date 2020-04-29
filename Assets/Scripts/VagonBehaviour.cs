@@ -30,6 +30,7 @@ public class VagonBehaviour : MonoBehaviour
         {
             transform.parent = parentInicial;
             transform.position = other.gameObject.GetComponentsInChildren<Transform>()[1].position;
+
             OffMeshLink[] arrayOML = parentInicial.GetComponentsInParent<OffMeshLink>();
             foreach (OffMeshLink item in arrayOML)
             {
