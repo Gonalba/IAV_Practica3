@@ -50,7 +50,6 @@ namespace BehaviorDesigner.Runtime.Tasks.Tutorials
         {
             if(other.gameObject.Equals(targetObject))
             {
-                Debug.Log("SUCCESS");
                 return true;
             }
             else return false;
@@ -70,9 +69,8 @@ namespace BehaviorDesigner.Runtime.Tasks.Tutorials
         public override void OnTriggerEnter(Collider other)
         {
             
-            if (other.gameObject.tag == tag)
+            if (other.gameObject.tag == tag && other is BoxCollider)
             {
-                Debug.Log("TRIGGERED");
                 otherGameObject.Value = other.gameObject;
                 triggered = true;
                 target = checkSoundSource(other.gameObject);

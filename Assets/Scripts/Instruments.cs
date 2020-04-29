@@ -35,6 +35,7 @@ public class Instruments : MonoBehaviour
     public bool isFixed()
     {
         return currentState == State.FIXED;
+        Debug.Log("ARREGLAO");
     }
 
     void OnTriggerStay(Collider other)
