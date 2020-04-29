@@ -11,6 +11,7 @@ TagManager:
   - Espectador
   - Vizconde
   - Cantante
+  - Musica
   layers:
   - Default
   - TransparentFX
