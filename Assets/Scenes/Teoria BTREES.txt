@@ -31,13 +31,13 @@ El Selector devolverá éxito cuando alguno de sus hijos devuelva Success. En cu
 En el ultimo ejemplo une por primera vez SEQUENCE con SELECTOR.
 Este video es buen ejemplo de las combinaciones entre sequence y selector con tareas sencillas que se ven a simple vista si devuelves success o failure.
 
-_VIDEO 6_ WHAT IS A REPEATER TASK?
+_VIDEO 5_ WHAT IS A REPEATER TASK?
 En este video explica que es mas eficaz usar un repeater que copiar y pegar secuencias de eventos iguales. 
 Además comenta que es especialmente útil el REPEAT FOREVER para enemigos que constantemente tienen alguna tarea que hacer.
 Para esto último, el propio árbol el el script tiene una opcion de "Restart when complete". Es decir, son dos maneras de hacer lo mismo.
 Es importante el ejemplo que pone de End on Failure, en el que el repeater ignora una secuencia que devuelve failure si este check no está activado en el propio Inspector.
 
-_VIDEO 7_ WHAT IS A PARALLEL TASK?
+_VIDEO 6_ WHAT IS A PARALLEL TASK?
 Explica como Parallel funciona con más de un task hijo.
 Gracias a esta tarea podemos hacer que un solo personaje realice varias acciones a la vez.
 En un arbol mas complicado de un enemigo que dispare y tenga que elegir arma al mismo tiempo puede ser muy útil.
@@ -47,4 +47,64 @@ Parallel Complete: devuelve al instante lo que devuelven cada una de sus ramas h
 
 ___AQUI TERMINANN LOS BEHAVIOUR TREE BASICS___
 
-_VIDEO 8_ BEHAVIOUR TREE OVERVIEW
+_VIDEO 7_ BEHAVIOUR TREE OVERVIEW
+En este video te quieren vender lo guay que es para los diseñadores y programadores esta herramienta
+Aqui hablan de que tienen una documentacion maravillosa online.
+https://opsive.com/support/documentation/behavior-designer/overview/
+
+Por otra parte habla sobre las Variables que pueden compartir distintas tareas (Variables que se pueden crear en la propia pestaña del Behaviour Disigner).
+Y las variables Globales, que son las que distintos arboles comparten.
+
+Importante la parte de las variables entre Tareas, ya que se puede declarar float, bool o incluso Transforms que asinar a los distintos Targets.
+
+_VIDEO 8_ WRITING A NEW TASK (WITH SHARED VARIABLES)
+Explica como crear una tarea propia.
+Se crea un nuevo .cs
+No se necesita ni update ni start, asi como el using System.Collections
+Si necesitamos un using BehaviourDesigner.Runtime.Tasks;
+La tarea (.cs) no hereda de MonoBehaviour, hereda de Action o Conditional... Depende de que tipo de tarea queramos.
+Así aparecerán nuestras tareas creadas entre la lista de las tareas de la ventana del Behaviour Designer.
+
+Se pueden declarar variables publicas o privadas que apareceran en el editor del BTree.
+En la documentacion podemos ver que metodos tienen las Tasks, los cuales hay que sobreescribir (override), por ejemplo OnAwake, OnUpdate (devuelve TaskStatus.Failure o .Success o .Running)
+
+_VIDEO 9_ CONDITIONAL ABORTS
+Los Conditional Aborts son una mejora para que el arbol no tenga que reevaluarse en cada frame. (Hay documentacion que lo explica mejor)
+En este ejemplo explica en que situacion seria util un LowerPriority Abort en una secuencia.
+Funciona del tal manera que si su hijo cambia de estado tiene prioridad respecto a la siguiente tarea al mismo nivel que el Sequence (ya que osn hijos de un selector).
+Después explica e Self Abort en una secuencia.
+En este ejemplo en cuanto la primera condicion de la secuencia devuelve Failure pasa a la tarea siguiente que no pertenezca a la secuencia (ya que son hijos de un selector).
+Luego explica el Both, que es literalmente la union de ambos.
+Reevalua constantemente la situacion, pero cuando cambia aborta inmediatamente.
+
+_VIDEO 10_ VISUAL DEBUGGER
+Repite por infinitésima vez que está explicado en la documentación online todo.
+Habla sobre los colores de las tareas al darle a play (verde si está running, gris si no) y de los simbolos (Cruz roja y Check verde). Bastante intuitivo.
+Por otra parte habla sobre como ver distintas variables en los comentarios del árbol, dándole a la lupa situada a la izquierda de dichas variables. Estas cambiarán en ejecución.
+Haciendo click derecho sobre una tarea podemos crear un BreakPoint en ella para que pause la ejecución en ese punto.
+Se puede desactivar una tarea en concreto antes de darle a play, en la cruz roja que hay en la esquina superior izquierda de cada tarea al pasar con el ratón por encima.
+
+Por otra parte, fuera de la propia ventana del BTree, podemos usar el metodo OnSceneGUI en las tareas para mostrar informacion en la escena, como el cono de vision. Es como GIZMOS en unity (lo usamos para raycast en la anterior practica).
+
+Log Task Changes (se activa en el script de Behaviour Tree), nos permite ver en consola todos los cambios que se producen en el arbol paso por paso (útil para arboles complejos).
+
+_VIDEO 11_ TASK ATTRIBUTES
+Habla sobre cosas extras desde código, como:
+Poner un link a la documentacion de una tarea creada por nosotros.
+Poner un icono propio a una tarea.
+Crear una categoria propia para las tareas.
+Crear una descripcion de la tarea que aparezca abajo a la izquierda de la ventana del BTree como las tareas originales del BTree.
+Una cosa de linkear tareas que no entiendo la utilidad pero no parece que lo vayamos a necesitar nunca.
+Compartir comportamientos entre arboles, heredando unos de otros.
+
+_VIDEO 12_ PLAYMAKER INTEGRATION
+Playmaker es un creador de codigo visual asi que ni hace falta verse este video. No aporta nada.
+
+_VIDEO 13_ USCRIPT INTEGRATION
+Similar al anterior con otro programa. No aporta nada.
+
+_VIDEO 14 EN ADELANTE_
+Ejemplos más complejos utilizando los comportamientos ya aprendidos.
+
+
+
