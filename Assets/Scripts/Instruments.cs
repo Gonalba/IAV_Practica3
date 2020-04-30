@@ -30,6 +30,7 @@ public class Instruments : MonoBehaviour
     public void fixInstruments() {
         currentState = State.FIXED;
         GetComponent<BoxCollider>().enabled = false;
+        Debug.Log("NIQUELAO");
     }
 
     public bool isFixed()
