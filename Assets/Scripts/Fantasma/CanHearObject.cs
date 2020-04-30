@@ -67,7 +67,6 @@ namespace BehaviorDesigner.Runtime.Tasks.Tutorials
 
         public override void OnTriggerEnter(Collider other)
         {
-            Debug.Log("HAY TRIGGER");
             if (other.gameObject.tag == tag && other is BoxCollider)
             {
                 otherGameObject.Value = other.gameObject;
