@@ -16,7 +16,7 @@ namespace UCM.IAV.Movimiento
         // Start is called before the first frame update
         void Start()
         {
-            leverState = lampara.isUp();
+            leverState = true;
             transform.parent.transform.Rotate(0.0f, 0.0f, -45.0f, Space.World);
 
             truePosition = Quaternion.Euler(0.0f, 0.0f, -45.0f);
@@ -41,13 +41,20 @@ namespace UCM.IAV.Movimiento
                 }
             }
         }
-
+        private void OnTriggerEnter(Collider other)
+        {
+            if (other.CompareTag("Fantasma") && leverState)
+            {
+                leverState = false;
+                lampara.toggleLampState(leverState);
+            }
+        }
         void OnTriggerStay(Collider other)
         {
-            if (other.tag == "Vizconde" && Input.GetKeyDown("e"))
+            if ((other.CompareTag("Vizconde") && Input.GetKeyDown("e")))
             {
-                leverState = !leverState;
-                lampara.toggleLampState();
+                leverState = true;
+                lampara.toggleLampState(leverState);
             }
         }
 

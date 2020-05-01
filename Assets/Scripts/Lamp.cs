@@ -51,9 +51,9 @@ namespace UCM.IAV.Movimiento
             return lampState;
         }
 
-        public void toggleLampState()
+        public void toggleLampState(bool state)
         {
-            lampState = !lampState;
+            lampState = state;
 
             if (lampState) emisor.EnviarMensaje(MENSAJE_ID.LAMP_UP);
             else emisor.EnviarMensaje(MENSAJE_ID.LAMP_DOWN);
