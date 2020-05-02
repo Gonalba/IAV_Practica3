@@ -16,8 +16,8 @@ public class VagonBehaviour : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Vizconde") || other.gameObject.CompareTag("Fantasma")
-            || other.gameObject.CompareTag("Cantante"))
+        if ((other.gameObject.CompareTag("Vizconde") || other.gameObject.CompareTag("Fantasma")
+            || other.gameObject.CompareTag("Cantante")) && other.transform.parent == null)
         {
             transform.parent = other.transform;
             transform.localPosition = new Vector3(0, 0, 0);

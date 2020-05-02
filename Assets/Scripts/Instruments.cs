@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Instruments : MonoBehaviour
 {
-    private enum State { FIXED, BROKEN};
+    public enum State { FIXED, BROKEN};
 
-    State currentState = State.FIXED;
+    public State currentState = State.FIXED;
 
     // Start is called before the first frame update
     void Start()
@@ -14,13 +14,6 @@ public class Instruments : MonoBehaviour
         currentState = State.FIXED;
         GetComponent<BoxCollider>().enabled = false;
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void breakInstruments()
     {
         currentState = State.BROKEN;

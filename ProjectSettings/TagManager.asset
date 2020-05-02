@@ -17,6 +17,7 @@ TagManager:
   - Musica
   - Patio
   - Palanca
+  - Esfera
   layers:
   - Default
   - TransparentFX

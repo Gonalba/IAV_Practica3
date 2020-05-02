@@ -44,7 +44,12 @@ public class SingerManager : MonoBehaviour
             this.gameObject.GetComponent<IdleState>().enabled = false;
             this.gameObject.GetComponent<NavMeshAgent>().enabled = false;
             this.gameObject.GetComponent<CapturedState>().enabled = true;
+            this.gameObject.transform.position = other.transform.position;
             this.transform.parent = other.transform;
+            this.gameObject.GetComponent<Collider>().isTrigger = true;
+            this.gameObject.GetComponent<Rigidbody>().useGravity = false;
+            this.gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
+            
         }
     }
     private void OnCollisionExit(Collision other)
